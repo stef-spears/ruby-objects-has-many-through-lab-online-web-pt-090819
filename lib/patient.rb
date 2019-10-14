@@ -10,7 +10,14 @@ class Patient
   
   def new_appointment(doctor, date)
     new_appt = Appointment.new(date, self, doctor)
-    new_appt
+    new_appt.patient = self 
+    new_appt 
+  end
+  
+  def appointments 
+end
+  
+  def doctors
   end
   
   def self.all 
